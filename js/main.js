@@ -14,6 +14,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     if (typeof window.initAnalytics === "function") { try { window.initAnalytics(); } catch (e) {} }
+    if (typeof window.initSupabase === "function") { try { window.initSupabase(); } catch (e) {} }
     if (typeof window.initFirebase === "function") { try { window.initFirebase(); } catch (e) {} }
 
     /* year */
