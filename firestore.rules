@@ -1,0 +1,33 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /ownerApplications/{docId} {
+      allow create: if request.resource.data.keys().hasOnly([
+        'storeName',
+        'businessType',
+        'location',
+        'managerName',
+        'phone',
+        'source',
+        'createdAt',
+        'status'
+      ]);
+      allow read, update, delete: if false;
+    }
+
+    match /consumerWaitlist/{docId} {
+      allow create: if request.resource.data.keys().hasOnly([
+        'name',
+        'contact',
+        'preferredArea',
+        'categories',
+        'source',
+        'createdAt',
+        'status'
+      ]);
+      allow read, update, delete: if false;
+    }
+  }
+}

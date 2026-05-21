@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리필링크 | 버릴 음식을 매출로 바꾸는 마감 재고 판매 플랫폼</title>
+    <meta name="description" content="리필링크는 마감 전 남은 음식을 근처 소비자에게 연결해 점주의 폐기 손실을 줄이고 추가 매출을 만드는 마감 재고 판매 플랫폼입니다." />
+    <meta property="og:title" content="리필링크 | 매일 버리는 음식, 오늘 매출로 바꾸세요" />
+    <meta property="og:description" content="마감 재고를 근처 소비자에게 실시간 노출하고 예약·결제·픽업까지 연결하는 플랫폼입니다." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+    <filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="2" result="t" seed="7"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+    </defs></svg>
+    <!-- ===== HEADER ===== -->
+    <header id="siteHeader">
+      <div class="wrap nav">
+        <a href="#hero" class="logo" aria-label="리필링크 홈">
+        <svg class="leaf sketch" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M20 34c0-12 4-22 16-26C34 20 30 32 20 34Z" fill="#3c7a58" stroke="#2c2a26" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M20 34c0-10-3-18-12-21C10 22 12 31 20 34Z" fill="#235b3e" stroke="#2c2a26" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M20 34V16" stroke="#2c2a26" stroke-width="2" stroke-linecap="round"/>
+        </svg>리필링크
+        </a>
+        <nav class="nav-menu" aria-label="주요 메뉴">
+          <a class="link" href="#problem" data-nav>문제</a>
+          <a class="link" href="#difference" data-nav>차별점</a>
+          <a class="link" href="#how-it-works" data-nav>이용 방식</a>
+          <a class="link" href="#owner-story" data-nav>사장님 이야기</a>
+          <a class="link" href="#faq" data-nav>FAQ</a>
+          <a class="link link-cta" href="#owner-apply" data-cta-owner data-section="nav">입점 상담 신청하기</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="nav-mobile" id="mobileNav" aria-label="모바일 메뉴" hidden>
+        <a href="#problem" data-nav>문제</a>
+        <a href="#difference" data-nav>차별점</a>
+        <a href="#how-it-works" data-nav>이용 방식</a>
+        <a href="#owner-story" data-nav>사장님 이야기</a>
+        <a href="#faq" data-nav>FAQ</a>
+        <a class="link-cta" href="#owner-apply" data-cta-owner data-section="mobile-nav">입점 상담 신청하기</a>
+      </nav>
+    </header>
+    <main id="main">
+      <!-- ===== HERO ===== -->
+      <section class="hero section" id="hero">
+        <svg class="doodle sketch" style="top:30px;left:3%;width:84px" viewBox="0 0 90 90" fill="none"><path d="M10 45c10-18 30-20 38-6" stroke="#e8743b" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 11"/><path d="M60 20l5 14 14 4-14 5-4 14-5-14-14-5 14-4 4-14Z" fill="#f4a259" stroke="#2c2a26" stroke-width="2"/></svg>
+        <svg class="doodle sketch" style="bottom:40px;right:2%;width:100px;opacity:.7" viewBox="0 0 110 110" fill="none"><circle cx="55" cy="55" r="34" stroke="#5c7a99" stroke-width="3" stroke-dasharray="2 12" fill="none"/><path d="M30 80c20 14 40 6 50-12" stroke="#e8743b" stroke-width="3" stroke-linecap="round"/></svg>
+        <div class="wrap">
+          <div class="hero-copy">
+            <span class="badge reveal d1">🔥 베타 입점 선착순 모집 · 3개월 수수료 0원</span>
+            <h1 class="reveal d2">
+              매일 버리는 음식,<br/>오늘 <span class="hl">매출<svg viewBox="0 0 120 18" preserveAspectRatio="none" fill="none"><path d="M3 13c30-9 70-11 114-6" stroke="#e8743b" stroke-width="5" stroke-linecap="round"/></svg></span>로 바꾸세요.
+            </h1>
+            <p class="lead reveal d3">
+              리필링크는 마감 전 남은 음식을 근처 소비자에게 실시간으로 노출하고, 예약·결제·픽업까지 연결하는 <b>마감 재고 판매 플랫폼</b>입니다.
+            </p>
+            <div class="hero-cta reveal d4">
+              <a class="btn btn-primary" href="#owner-apply" data-cta-owner data-section="hero">입점 상담 신청하기</a>
+              <a class="btn btn-ghost" href="#how-it-works">이용 방식 보기</a>
+            </div>
+            <p class="hero-trust reveal d5">
+              🌿 버려질 음식, 앱 하나로 다 판다
+            </p>
+          </div>
+          <div class="hero-art reveal d3">
+            <img src="images/top_img.png" alt="마감 시간에 폰으로 마감딜을 등록하는 가게 사장님 일러스트" class="hero-art-img" width="560" height="500" />
+          </div>
+        </div>
+      </section>
+      <!-- ===== PROBLEM ===== -->
+      <section class="section section-alt" id="problem">
+        <svg class="doodle sketch" style="top:30px;left:5%;width:70px;opacity:.6" viewBox="0 0 70 70" fill="none"><path d="M8 35c14-16 40-16 54 0" stroke="#e8743b" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10"/></svg>
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="sec-tag">이거 우리 얘기 아닌가요?</span>
+            <h2>
+              오늘도 남은 음식,<br class="br-m"/>그냥 버리고 있나요?
+            </h2>
+            <p>
+              마감 전 남은 음식은 이미 만들어진 상품입니다. 하지만 알릴 방법이 없고, 판매할 채널이 없어 매일 손실로 사라지고 있습니다.
+            </p>
+          </div>
+          <div class="cards cards-4">
+            <article class="card reveal d1">
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><rect x="12" y="30" width="40" height="26" rx="5" fill="#f4a259" stroke="#2c2a26" stroke-width="3"/><circle cx="32" cy="43" r="7" fill="#fffdf8" stroke="#2c2a26" stroke-width="2.5"/><text x="32" y="48" text-anchor="middle" font-family="Gaegu" font-weight="700" font-size="11" fill="#c9551f">₩</text><path d="M56 28c8-2 9-12 4-16M58 18l4-4 4 5" stroke="#e8743b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 6"/></svg>
+              <h3>
+                수만 원어치 손실
+              </h3>
+              <p>
+                하루에도 수만 원어치 음식이 그대로 남습니다.
+              </p>
+            </article>
+            <article class="card reveal d2">
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><path d="M18 40V30l30-12v36L18 42Z" fill="#fffdf8" stroke="#2c2a26" stroke-width="3" stroke-linejoin="round"/><path d="M48 22c8 0 12 5 12 11s-4 11-12 11" stroke="#235b3e" stroke-width="3" stroke-linecap="round"/><path d="M52 52l10 10M62 52l-10 10" stroke="#e8743b" stroke-width="3" stroke-linecap="round"/></svg>
+              <h3>
+                알릴 방법 없음
+              </h3>
+              <p>
+                할인해서 팔고 싶어도 알릴 방법이 없습니다.
+              </p>
+            </article>
+            <article class="card reveal d3">
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><rect x="24" y="14" width="30" height="50" rx="7" fill="#fffdf8" stroke="#2c2a26" stroke-width="3"/><path d="M30 22h18" stroke="#2c2a26" stroke-width="2.5" stroke-linecap="round"/><circle cx="39" cy="42" r="9" fill="#f4e7cc" stroke="#2c2a26" stroke-width="2.5"/><path d="M35 41a4 4 0 0 1 8 0" stroke="#5c7a99" stroke-width="2.2" stroke-linecap="round"/><path d="M58 30c4 1 7 4 7 4s-3 3-7 4" stroke="#e8743b" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="2 6"/></svg>
+              <h3>
+                SNS도 한계
+              </h3>
+              <p>
+                SNS에 올려도 실제로 보는 사람이 적습니다.
+              </p>
+            </article>
+            <article class="card reveal d4">
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><path d="M20 26h34l-3 34a4 4 0 0 1-4 4H27a4 4 0 0 1-4-4l-3-34Z" fill="#eaf2ec" stroke="#2c2a26" stroke-width="3" stroke-linejoin="round"/><path d="M16 26h42M30 20h14" stroke="#2c2a26" stroke-width="3" stroke-linecap="round"/><path d="M32 36v18M42 36v18" stroke="#5c7a99" stroke-width="2.5" stroke-linecap="round"/><circle cx="55" cy="18" r="3" fill="#e8743b"/></svg>
+              <h3>
+                결국 폐기
+              </h3>
+              <p>
+                문의·예약을 직접 챙기기 어려워, 결국 버려집니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ===== LOSS CALCULATOR ===== -->
+      <section class="section" id="loss-calculator">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="sec-tag">숫자로 보면 더 아까워요</span>
+            <h2>
+              얼마나 버리고 계신가요?
+            </h2>
+            <p>
+              하루에 버리는 음식 금액을 입력하면, 한 달과 1년 동안 놓치고 있는 매출 기회를 확인할 수 있습니다.
+            </p>
+          </div>
+          <div class="calc-grid">
+            <div class="calc-card reveal d1">
+              <form id="lossCalculatorForm" novalidate>
+                <div class="calc-row">
+                  <div class="field">
+                    <label for="dailyLoss">하루 평균 폐기 금액 (원)</label><input type="number" id="dailyLoss" name="dailyLoss" min="0" step="1000" placeholder="예: 50000" inputmode="numeric"/>
+                  </div>
+                  <div class="field">
+                    <label for="monthlyDays">월 영업일 수</label><input type="number" id="monthlyDays" name="monthlyDays" min="1" max="31" placeholder="예: 25" inputmode="numeric"/>
+                  </div>
+                </div>
+              </form>
+              <div class="calc-results" id="calculatorResults" hidden>
+                <div class="result">
+                  <span class="lbl">월 예상 폐기 손실</span><strong class="val" id="monthlyLossResult">—</strong>
+                </div>
+                <div class="result year">
+                  <span class="lbl">연간 예상 폐기 손실</span><strong class="val" id="yearlyLossResult">—</strong>
+                </div>
+                <p class="calc-example" id="calculatorExample">
+                </p>
+              </div>
+            </div>
+            <div class="calc-art reveal d2">
+              <img src="images/loss-art.svg" alt="매일 버려지는 음식과 손실을 상징하는 동전과 쓰레기통 일러스트" />
+              <p style="text-align:center;font-family:var(--font-pen);font-size:1.3rem;color:var(--orange-deep);margin:6px 0 0;transform:rotate(-1.5deg);">
+                매일 이만큼이 그냥 버려져요…
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== DIFFERENCE ===== -->
+      <section class="section section-alt" id="difference">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="sec-tag">뭐가 다른데?</span>
+            <h2>
+              배민도, 당근도 해결하지 못한<br class="br-m"/>마감 재고 문제
+            </h2>
+          </div>
+          <div class="brand-compare reveal">
+            <div class="brand-compare-row brand-compare-row--duo">
+              <p class="brand-line">
+                <img class="brand-line-logo" src="images/bamin.png" alt="" width="28" height="28" decoding="async" />
+                <span><b class="brand-baemin">배민</b>은 배달을 연결합니다.</span>
+              </p>
+              <p class="brand-line">
+                <img class="brand-line-logo" src="images/dang.png" alt="" width="28" height="28" decoding="async" />
+                <span><b class="brand-danggeun">당근</b>은 동네 소식을 전합니다.</span>
+              </p>
+            </div>
+            <p class="brand-line brand-line--primary">
+              <img class="brand-line-logo" src="images/logo.png" alt="" width="44" height="44" decoding="async" />
+              <span><b class="brand-refillink">리필링크</b>는 버려질 음식을 매출로 바꿉니다.</span>
+            </p>
+          </div>
+          <div class="compare-wrap reveal">
+            <table class="compare">
+              <thead>
+                <tr>
+                  <th>항목</th><th>배민/쿠팡이츠</th><th>당근</th><th>인스타/SNS</th><th class="hl">리필링크</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>목적</th><td>배달·포장 주문</td><td>동네 홍보·거래</td><td>팔로워 대상 홍보</td><td class="hl">마감 재고 판매</td>
+                </tr>
+                <tr>
+                  <th>재고 등록</th><td>제한적</td><td>직접 글 작성</td><td>직접 게시물 작성</td><td class="hl">몇 번의 터치로 등록</td>
+                </tr>
+                <tr>
+                  <th>노출 방식</th><td>주문 의도 사용자 중심</td><td>동네 피드 노출</td><td>팔로워 의존</td><td class="hl">근처 소비자 자동 노출</td>
+                </tr>
+                <tr>
+                  <th>결제/픽업</th><td>일반 주문 중심</td><td>별도 협의 필요</td><td>별도 문의 필요</td><td class="hl">앱 결제 + QR 픽업</td>
+                </tr>
+                <tr>
+                  <th>예측 기능</th><td>없음</td><td>없음</td><td>없음</td><td class="hl">마감딜 예측 알림 예정</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="scenario-flow">
+            <div class="scenario old reveal d1">
+              <h3>
+                😮‍💨 기존 방식
+              </h3>
+              <ul class="flow">
+                <li>
+                  <span class="dot">1</span>남은 음식 발생
+                </li>
+                <li>
+                  <span class="dot">2</span>인스타에 직접 올림
+                </li>
+                <li>
+                  <span class="dot">3</span>보는 사람이 적음
+                </li>
+                <li>
+                  <span class="dot">4</span>문의·예약 따로 받음
+                </li>
+                <li class="end">
+                  <span class="dot">✕</span>결국 폐기
+                </li>
+              </ul>
+            </div>
+            <div class="scenario new reveal d2">
+              <h3>
+                🌿 리필링크 방식
+              </h3>
+              <ul class="flow">
+                <li>
+                  <span class="dot">1</span>남은 음식 발생
+                </li>
+                <li>
+                  <span class="dot">2</span>마감딜 등록 (터치 몇 번)
+                </li>
+                <li>
+                  <span class="dot">3</span>근처 소비자에게 자동 노출
+                </li>
+                <li>
+                  <span class="dot">4</span>앱에서 바로 결제
+                </li>
+                <li class="end">
+                  <span class="dot">✓</span>QR로 픽업 완료
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== HOW IT WORKS ===== -->
+      <section class="section" id="how-it-works">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="sec-tag">정말 간단해요</span>
+            <h2>
+              남은 음식 등록부터 픽업까지,<br class="br-m"/>이렇게 연결됩니다
+            </h2>
+          </div>
+          <ol class="steps">
+            <li class="step reveal d1">
+              <span class="num">1</span>
+              <svg class="ico sketch" viewBox="0 0 64 64" fill="none"><rect x="18" y="8" width="28" height="48" rx="6" fill="#235b3e" stroke="#2c2a26" stroke-width="3"/><rect x="23" y="15" width="18" height="28" rx="3" fill="#fffdf8" stroke="#2c2a26" stroke-width="2"/><path d="M27 22h10M27 28h10M27 34h6" stroke="#5c7a99" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="49" r="3" fill="#f4a259"/></svg>
+              <h3>
+                마감 전 남은 음식 등록
+              </h3>
+              <p>
+                메뉴명·수량·할인 가격·픽업 시간만 입력하면 끝.
+              </p>
+            </li>
+            <li class="step reveal d2">
+              <span class="num">2</span>
+              <svg class="ico sketch" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="30" r="20" stroke="#5c7a99" stroke-width="2.6" stroke-dasharray="2 8" fill="none"/><path d="M32 52C22 42 22 30 32 24C42 30 42 42 32 52Z" fill="#e8743b" stroke="#2c2a26" stroke-width="3" stroke-linejoin="round"/><circle cx="32" cy="33" r="6" fill="#fffdf8" stroke="#2c2a26" stroke-width="2"/></svg>
+              <h3>
+                근처 소비자에게 자동 노출
+              </h3>
+              <p>
+                현재 위치·관심 지역 기준으로 마감딜이 노출돼요.
+              </p>
+            </li>
+            <li class="step reveal d3">
+              <span class="num">3</span>
+              <svg class="ico sketch" viewBox="0 0 64 64" fill="none"><rect x="10" y="20" width="44" height="28" rx="6" fill="#fffdf8" stroke="#2c2a26" stroke-width="3"/><rect x="10" y="27" width="44" height="7" fill="#235b3e"/><rect x="16" y="40" width="14" height="4" rx="2" fill="#5c7a99"/><circle cx="46" cy="42" r="3" fill="#f4a259"/></svg>
+              <h3>
+                소비자가 앱에서 결제
+              </h3>
+              <p>
+                원하는 마감딜을 골라 앱에서 바로 선결제.
+              </p>
+            </li>
+            <li class="step reveal d4">
+              <span class="num">4</span>
+              <svg class="ico sketch" viewBox="0 0 64 64" fill="none"><rect x="14" y="14" width="36" height="36" rx="6" fill="#fffdf8" stroke="#2c2a26" stroke-width="3"/><rect x="20" y="20" width="9" height="9" fill="#2c2a26"/><rect x="35" y="20" width="9" height="9" fill="#2c2a26"/><rect x="20" y="35" width="9" height="9" fill="#2c2a26"/><rect x="35" y="35" width="9" height="9" fill="#e8743b"/></svg>
+              <h3>
+                QR로 빠르게 픽업
+              </h3>
+              <p>
+                매장 방문 후 QR 확인으로 픽업 완료!
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- ===== OWNER BENEFITS ===== -->
+      <section class="section section-alt" id="owner-benefits">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="sec-tag">남는 음식 = 아직 매출</span>
+            <h2>
+              남는 음식이 있다면,<br class="br-m"/>그건 아직 매출이 될 수 있습니다
+            </h2>
+          </div>
+          <div class="cards cards-4">
+            <article class="card reveal d1">
+              <span class="rank">1</span>
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><path d="M14 54l12-14 12 8 18-26" stroke="#235b3e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M48 20h12v12" stroke="#235b3e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="58" r="4" fill="#f4a259" stroke="#2c2a26" stroke-width="1.6"/></svg>
+              <h3>
+                추가 매출 발생
+              </h3>
+              <p>
+                이미 만든 음식을 버리지 않고 팔아, 없던 매출을 만듭니다.
+              </p>
+            </article>
+            <article class="card reveal d2">
+              <span class="rank">2</span>
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><path d="M22 26h30l-3 30a4 4 0 0 1-4 4H29a4 4 0 0 1-4-4l-3-30Z" fill="#eaf2ec" stroke="#2c2a26" stroke-width="3" stroke-linejoin="round"/><path d="M18 26h38M30 20h14" stroke="#2c2a26" stroke-width="3" stroke-linecap="round"/><path d="M55 38v14m0 0l-5-5m5 5l5-5" stroke="#235b3e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3>
+                폐기 손실 감소
+              </h3>
+              <p>
+                매일 남던 음식의 손실과 폐기 부담을 줄입니다.
+              </p>
+            </article>
+            <article class="card reveal d3">
+              <span class="rank">3</span>
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><path d="M20 42V30l28-12v36L20 44Z" fill="#fffdf8" stroke="#2c2a26" stroke-width="3" stroke-linejoin="round"/><path d="M48 24c8 0 12 5 12 12s-4 12-12 12" stroke="#235b3e" stroke-width="3" stroke-linecap="round"/><path d="M14 50l4-8 4 8M58 16l3 6 6 1-6 3-3 6-3-6-6-3 6-1 3-6Z" fill="#f4a259" stroke="#2c2a26" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <h3>
+                홍보 자동화
+              </h3>
+              <p>
+                인스타·블로그·단골 연락 없이 앱이 알아서 노출합니다.
+              </p>
+            </article>
+            <article class="card reveal d4">
+              <span class="rank">4</span>
+              <svg class="ico sketch" viewBox="0 0 74 74" fill="none"><rect x="22" y="10" width="26" height="44" rx="6" fill="#235b3e" stroke="#2c2a26" stroke-width="3"/><rect x="27" y="16" width="16" height="24" rx="2" fill="#fffdf8"/><path d="M44 50c6 0 10 4 12 10M40 58c4-6 12-8 18-4" stroke="#2c2a26" stroke-width="2.6" stroke-linecap="round"/><circle cx="35" cy="47" r="3" fill="#f4a259"/></svg>
+              <h3>
+                간편한 운영
+              </h3>
+              <p>
+                처음 세팅 후엔 몇 번의 터치만으로 마감딜 등록.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="prediction">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="pill">⏳ 데이터가 쌓인 이후 활성화 예정</span>
+            <h2>
+              팔수록 더 똑똑해지는<br class="br-m"/>마감 재고 판매 채널
+            </h2>
+            <p>
+              리필링크는 오늘 남은 음식을 등록하는 데서 끝나지 않습니다. 판매 데이터가 쌓이면 어떤 요일·시간대에<br/>어떤 메뉴가 자주 남는지 분석해, 더 쉽게 마감딜을 운영하도록 돕습니다.
+            </p>
+          </div>
+          <div class="pred-grid">
+            <div class="reveal d1 pred-chart">
+              <img src="images/pred-chart.png" alt="점심·저녁·마감 시간대별 분석, 추천, 알림 흐름을 보여주는 그래프" width="460" height="280" decoding="async" />
+            </div>
+            <div class="pred-cols reveal d2">
+              <div class="pred-col">
+                <h3>
+                  🏪 점주용 (예정)
+                </h3>
+                <ul>
+                  <li>
+                    자주 남는 메뉴·시간대 분석
+                  </li>
+                  <li>
+                    반복 마감딜 등록 추천
+                  </li>
+                  <li>
+                    잘 팔리는 할인율·시간대 참고
+                  </li>
+                  <li>
+                    자동 추천으로 운영 부담 감소
+                  </li>
+                </ul>
+              </div>
+              <div class="pred-col">
+                <h3>
+                  🛒 소비자용 (예정)
+                </h3>
+                <ul>
+                  <li>
+                    근처 마감딜 실시간 확인
+                  </li>
+                  <li>
+                    찜한 가게 알림
+                  </li>
+                  <li>
+                    내일 뜰 가능성 높은 딜 알림
+                  </li>
+                  <li>
+                    시간대별 맞춤 추천
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section story-band" id="owner-story">
+        <svg class="doodle sketch" style="top:26px;right:6%;width:64px;opacity:.6" viewBox="0 0 64 64" fill="none"><path d="M8 32c12-14 36-14 48 0" stroke="#e8743b" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 9"/></svg>
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="sec-tag">버리던 저녁에서, 파는 저녁으로</span>
+            <h2>
+              리필링크를 만난 사장님의 하루
+            </h2>
+            <p>
+              마감 1시간 전, 늘 똑같던 저녁이 이렇게 달라집니다.
+            </p>
+          </div>
+          <div class="story-strip">
+            <!-- Panel 1: before -->
+            <article class="panel before reveal d1">
+              <span class="step-tag">마감 1시간 전</span>
+              <img class="scene" src="images/story-1-before.svg" alt="마감 시간 남은 음식을 보며 한숨 쉬는 사장님" />
+              <p>
+                <span class="who">예전의 저녁</span>“오늘도 이만큼이나 남았네…” 버리긴 아깝고, 팔 방법은 없고.
+              </p>
+            </article>
+            <span class="story-arrow" aria-hidden="true">➜</span>
+            <!-- Panel 2: register -->
+            <article class="panel reveal d2">
+              <span class="step-tag">탁탁, 등록</span>
+              <img class="scene" src="images/story-2-register.svg" alt="폰으로 마감딜을 등록하는 사장님" />
+              <p>
+                <span class="who">달라진 첫걸음</span>남은 메뉴를 마감딜로 등록. 터치 몇 번이면 끝이에요.
+              </p>
+            </article>
+            <span class="story-arrow" aria-hidden="true">➜</span>
+            <!-- Panel 3: pickup -->
+            <article class="panel reveal d3">
+              <span class="step-tag">손님 도착</span>
+              <img class="scene" src="images/story-3-pickup.svg" alt="근처 손님이 매장에 픽업하러 온 모습" />
+              <p>
+                <span class="who">근처에서 바로</span>“근처에서 보고 왔어요!” 결제까지 끝낸 손님이 픽업하러 와요.
+              </p>
+            </article>
+            <span class="story-arrow" aria-hidden="true">➜</span>
+            <!-- Panel 4: after -->
+            <article class="panel reveal d4">
+              <span class="step-tag">마감 완료</span>
+              <img class="scene" src="images/story-4-after.svg" alt="다 팔리고 매출과 단골이 생겨 웃는 사장님" />
+              <p>
+                <span class="who">파는 저녁</span>버릴 뻔한 음식이 매출이 되고, 단골 한 명이 더 생겼어요.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="vision" id="vision">
+        <div class="wrap">
+          <div class="reveal">
+            <span class="v-tag">우리가 진짜 만들고 싶은 건</span>
+            <h2>
+              버려질 음식이,<br class="br-m"/>누군가의 <em>따뜻한 한 끼</em>가 되는 동네
+            </h2>
+            <p class="v-sub">
+              리필링크는 단순한 할인 앱이 아니에요. 남는 음식이 버려지지 않고, 합리적인 한 끼가 되고, 동네 가게와 이웃이 자연스럽게 연결되는 — 그런 평범한 저녁을 매일 만들어가고 있어요.
+            </p>
+            <p class="v-impact">
+              🌿 점주에겐 매출을, 소비자에겐 합리적인 한 끼를, 동네엔 덜 버리는 하루를.
+            </p>
+          </div>
+        </div>
+        <img class="skyline" src="images/vision-skyline.svg" alt="노을 진 동네, 마감딜로 불 켜진 가게들과 장바구니를 든 이웃들 일러스트" />
+      </section>
+      <!-- ===== FINAL CTA ===== -->
+      <section class="section final" id="final-cta">
+        <svg class="doodle sketch" style="top:30px;left:8%;width:60px;opacity:.7" viewBox="0 0 60 60" fill="none"><path d="M30 6l5 16 16 5-16 5-5 16-5-16-16-5 16-5 5-16Z" fill="#f4a259" stroke="#2c2a26" stroke-width="2"/></svg>
+        <svg class="doodle sketch" style="bottom:24px;right:9%;width:70px;opacity:.6" viewBox="0 0 70 70" fill="none"><path d="M10 40c16-16 34-16 50 0" stroke="#235b3e" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 9"/></svg>
+        <div class="wrap">
+          <h2 class="reveal">
+            오늘 버릴 음식,<br class="br-m"/>내일은 매출이 될 수 있습니다
+          </h2>
+          <p class="sub reveal d1">
+            리필링크와 함께 마감 재고를 새로운 매출 기회로 바꿔보세요. 베타 입점 매장을 먼저 모집하고 있습니다.
+          </p>
+          <p class="badge reveal d2">
+            🔥 베타 입점 선착순 모집 · 초기 3개월 수수료 0원
+          </p>
+          <div class="reveal d3" style="margin-top:8px;">
+            <a class="btn btn-primary btn-lg" href="#owner-apply" data-cta-owner data-section="final-cta">입점 상담 신청하기</a>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="faq">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="sec-tag">궁금하시죠?</span>
+            <h2>
+              자주 묻는 질문
+            </h2>
+          </div>
+          <div class="faq reveal" id="faqList">
+            <details class="faq-item">
+              <summary>
+                <span class="q"><b>Q</b>입점하려면 비용이 드나요?</span><span class="pm">+</span>
+              </summary>
+              <p>
+                베타 입점 매장은 초기 3개월 동안 수수료 없이 이용할 수 있습니다. 이후에는 음식이 실제로 판매된 경우에만 성과 기반 수수료가 적용되는 구조를 검토하고 있습니다.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="q"><b>Q</b>음식이 팔리지 않으면 수수료가 발생하나요?</span><span class="pm">+</span>
+              </summary>
+              <p>
+                아닙니다. 리필링크는 팔린 음식에 대해서만 수수료가 발생하는 구조를 지향합니다. 판매되지 않은 음식에 별도 비용을 부과하는 방식은 초기 모델에서 제외합니다.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="q"><b>Q</b>어떤 업종이 입점할 수 있나요?</span><span class="pm">+</span>
+              </summary>
+              <p>
+                식당, 카페, 베이커리, 분식, 도시락, 샐러드 매장처럼 마감 전 남는 음식이 발생하는 매장이라면 우선 입점 대상이 될 수 있습니다.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="q"><b>Q</b>마감딜 등록은 어렵지 않나요?</span><span class="pm">+</span>
+              </summary>
+              <p>
+                복잡한 홍보 글을 작성할 필요 없이, 메뉴명·수량·할인 가격·픽업 가능 시간만 입력하면 등록할 수 있는 구조를 목표로 합니다.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="q"><b>Q</b>소비자는 어떻게 음식을 픽업하나요?</span><span class="pm">+</span>
+              </summary>
+              <p>
+                소비자는 앱에서 마감딜을 확인하고 결제한 뒤, 매장에 방문해 QR 확인 후 음식을 픽업합니다.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- ===== OWNER APPLY ===== -->
+      <section class="section section-alt" id="owner-apply">
+        <div class="wrap">
+          <div class="form-grid">
+            <div class="reveal d1">
+              <div class="sec-head left">
+                <span class="sec-tag">1분이면 충분해요</span>
+                <h2>
+                  입점 상담 신청
+                </h2>
+                <p>
+                  베타 입점 가능성이 있는 매장을 우선으로 연락드립니다. 아래 정보를 남겨주시면 리필링크 팀이 확인 후 빠르게 연락드릴게요.
+                </p>
+              </div>
+              <img src="images/apply-art.svg" alt="함께 시작하자고 반갑게 맞이하는 사장님과 신청 완료 화면 일러스트" class="apply-art" />
+            </div>
+            <div class="form-card reveal d2">
+              <form id="ownerApplyForm" novalidate>
+                <div class="fg">
+                  <label for="storeName">가게명</label><input type="text" id="storeName" name="storeName"/><span class="field-err" data-err="storeName"></span>
+                </div>
+                <div class="fg">
+                  <label for="businessType">업종</label><select id="businessType" name="businessType"><option value="">선택해주세요</option><option value="식당">식당</option><option value="카페">카페</option><option value="베이커리">베이커리</option><option value="분식">분식</option><option value="도시락/샐러드">도시락/샐러드</option><option value="기타">기타</option></select><span class="field-err" data-err="businessType"></span>
+                </div>
+                <div class="fg">
+                  <label for="location">위치/상권</label><input type="text" id="location" name="location" placeholder="예: 서울 마포구 홍대입구"/><span class="field-err" data-err="location"></span>
+                </div>
+                <div class="fg">
+                  <label for="managerName">담당자 이름</label><input type="text" id="managerName" name="managerName" autocomplete="name"/><span class="field-err" data-err="managerName"></span>
+                </div>
+                <div class="fg">
+                  <label for="phone">연락처</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="010-0000-0000"/><span class="field-err" data-err="phone"></span>
+                </div>
+                <div class="fg">
+                  <label class="consent"><input type="checkbox" id="ownerConsent" name="consent"/><span>입점 상담을 위해 입력하신 가게명, 담당자명, 연락처, 위치 정보를 수집합니다. 수집된 정보는 리필링크 입점 상담 및 베타 운영 안내 목적으로만 사용됩니다.</span></label><span class="field-err" data-err="ownerConsent"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">입점 상담 신청하기</button>
+                <div class="form-msg" id="ownerFormMessage" role="status" aria-live="polite">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="wrap">
+        <p class="fb">
+          🌿 리필링크
+        </p>
+        <p class="ft">
+          매일 버리는 음식을 오늘 매출로 바꾸는 마감 재고 판매 플랫폼
+        </p>
+        <p class="fc">
+          &copy; <span id="year"></span> Refillink. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <div class="modal" id="ownerSuccessModal" role="dialog" aria-modal="true" aria-labelledby="ownerSuccessTitle" hidden>
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-panel">
+        <button type="button" class="modal-close" aria-label="닫기">×</button>
+        <p class="modal-icon" aria-hidden="true">🌿</p>
+        <h3 class="modal-title" id="ownerSuccessTitle">신청이 완료되었습니다.</h3>
+        <p class="modal-text">리필링크 팀이 확인 후 빠르게 연락드릴게요.</p>
+        <button type="button" class="btn btn-primary btn-block" data-modal-close>확인</button>
+      </div>
+    </div>
+    <div class="mcta" id="mobileCtaBar">
+      <a class="btn btn-primary" href="#owner-apply" data-cta-owner data-section="mobile-fixed">입점 상담 신청하기</a>
+    </div>
+    <script src="js/firebase-config.js">
+    </script>
+    <script src="js/analytics.js">
+    </script>
+    <script src="js/firebase.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>
