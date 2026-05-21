@@ -97,15 +97,19 @@ header.scrolled{box-shadow:0 4px 0 rgba(44,42,38,.08);}
 
 /* hero */
 .hero{padding:76px 0 86px;}
-.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;z-index:2;}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:32px 64px;align-items:center;z-index:2;}
 .badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-hand);font-weight:800;font-size:1.10rem;background:var(--paper);color:var(--orange-deep);border:2.5px solid var(--ink);border-radius:30px;padding:7px 16px;box-shadow:3px 3px 0 var(--orange-soft);transform:rotate(-1.5deg);}
-.hero h1{font-family:'Aggravo',sans-serif;font-weight:600;font-size:clamp(2.1rem,4.2vw,3.2rem);line-height:1.2;letter-spacing:-.04em;margin:36px 0 18px;color:var(--green-deep);white-space:normal;}
+.hero h1{font-family:'Aggravo',sans-serif;font-weight:600;font-size:clamp(2.4rem,5vw,3.75rem);line-height:1.2;letter-spacing:-.04em;margin:36px 0 18px;color:var(--green-deep);white-space:normal;}
+.hero h1 .hero-t2{white-space:nowrap;}
+@media(max-width:768px){
+  .hero h1 .hero-t2{white-space:normal;}
+}
 .hero h1 .hl{position:relative;white-space:nowrap;color:var(--orange-deep);}
 .hero h1 .hl svg{position:absolute;left:-4%;bottom:-14px;width:108%;height:18px;}
 .hero .lead{font-size:1.13rem;color:var(--ink-soft);max-width:30em;margin:0 0 30px;}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;}
 .hero-trust{margin-top:22px;font-family:var(--font-pen);font-size:1.25rem;color:var(--green);display:flex;align-items:center;gap:8px;}
-.hero-art{position:relative;}
+.hero-art{position:relative;justify-self:end;max-width:580px;width:100%;}
 .hero-art svg{width:100%;height:auto;overflow:visible;}
 
 /* generic cards */
@@ -117,7 +121,7 @@ header.scrolled{box-shadow:0 4px 0 rgba(44,42,38,.08);}
 .cards .card:nth-child(even){transform:rotate(1deg);}
 .cards .card:hover{transform:translateY(-5px) rotate(0);box-shadow:7px 9px 0 var(--orange);}
 .card .ico{width:74px;height:74px;margin-bottom:14px;}
-.card h3{font-family:var(--font-body);font-weight:800;font-size:1.12rem;margin:0 0 7px;color:var(--green-deep);}
+.card h3{font-family:var(--font-body);font-weight:800;font-size:1.2rem;margin:0 0 7px;color:var(--green-deep);}
 .card p{margin:0;font-size:.95rem;color:var(--ink-soft);line-height:1.55;}
 .rank{position:absolute;top:-14px;right:18px;width:34px;height:34px;display:grid;place-items:center;font-family:var(--font-hand);font-weight:700;font-size:1.2rem;color:#fff;background:var(--orange);border:2.5px solid var(--ink);border-radius:50%;box-shadow:2px 2px 0 var(--ink);}
 
